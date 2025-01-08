@@ -1,0 +1,189 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Desain Global */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    background-image: url('header-background.jpg'); /* Ganti dengan gambar latar belakang sesuai keinginan */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+}
+
+header .hero-image h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .hero-image p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* Welcome Container */
+.welcome-container {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: -40px auto 40px;
+    max-width: 1200px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.welcome-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff5e5b;
+    text-transform: uppercase;
+}
+
+.welcome-container p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+/* Gallery for Rooms or Destinations */
+.room-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.room-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.room-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.room-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* Hover Effects for room items */
+.room-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.room-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Action Buttons */
+.action-buttons {
+    margin-top: 30px;
+}
+
+.action-buttons .btn {
+    background-color: #ff5e5b;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.action-buttons .btn:hover {
+    background-color: #d44a47;
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Responsif untuk ukuran layar kecil */
+@media screen and (max-width: 768px) {
+    header .hero-image h1 {
+        font-size: 2.5rem;
+    }
+
+    header .hero-image p {
+        font-size: 1rem;
+    }
+
+    .welcome-container h2 {
+        font-size: 2rem;
+    }
+
+    .room-gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .action-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action-buttons .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

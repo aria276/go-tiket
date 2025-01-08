@@ -1,0 +1,128 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fc;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.booking-summary {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.booking-summary h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.booking-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.booking-card p {
+    font-size: 1rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.booking-card p strong {
+    color: #007bff;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: none;
+}
+
+.btn-confirm {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: #0056b3;
+}
+
+.btn-cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+.btn-cancel:hover {
+    background-color: #d32f2f;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+    margin-top: 30px;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px; 
+    }
+
+    .booking-summary {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .booking-summary h2 {
+        font-size: 1.8rem; 
+    }
+
+    .booking-card {
+        padding: 15px;
+    }
+
+    .booking-card p {
+        font-size: 0.9rem; 
+    }
+
+    button {
+        width: 100%; 
+        font-size: 1rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
